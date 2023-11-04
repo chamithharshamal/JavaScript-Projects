@@ -4,16 +4,20 @@
     box-sizing: border-box;
 }
 
+body{
+    background:linear-gradient(to right, #ff416c, #ff4b2b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+}
 .container{
     width: 400px;
-    height: 350px;
+    height: 370px;
     background-color: pink;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
     padding: 20px;
+    text-align: center;
     border-radius: 20px;
 }
 
@@ -23,23 +27,28 @@ h1{
 
 h3{
     margin-top: 10px;
+    margin-bottom: 5px;
 }
 input{
     width: 80%;
-    font-size: 20px;
-    padding: 5px;
+    font-size: 18px;
+    padding: 7px;
     padding-left: 10px;
     border-radius: 20px;
     border: none;
 }
 
+input:focus{
+    outline: none;
+}
 button{
     margin: 20px;
-    padding: 6px;
+    padding: 9px;
     color: #fff;
     background-color: green;
     border: none;
     border-radius: 10px;
+    font-size: 15px;
 }
 
 #result{
