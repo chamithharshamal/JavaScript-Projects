@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #33001b,#ff0084);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh; 
+}
+
+.container{
+    width: 350px;
+    height: 370px;
+    background-color: rgba(255,255,255,0.4);
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    animation: neon 1s infinite alternate;
+}
+
+@keyframes neon {
+from
+{
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);
+}
+to
+{
+    box-shadow: 0px 0px 20px 10px #f0f0ec;
+    box-shadow: 0px 0px 30px 10px #f0ecee;
+    
+}
+}
+
+
+
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea{
+    padding: 10px ;
+    resize: none;
+    width: 100%;
+    
+}
+
+.btn-container{
+    display: flex;;
+    width: 100%;
+}
+
+button{
+    padding: 5px;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #1d9619;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button[type="reset"]{
+    background-color: #ff0000;
+    width: 50%;
+    margin-left: 10px;
+}
+
+#result{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
