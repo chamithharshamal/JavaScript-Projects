@@ -11,8 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateBody() {
         if (input.checked) {
             body.style.backgroundColor = "black";
+            body.style.color = "white";
         } else {
             body.style.backgroundColor = "white";
+            body.style.color = "black";
         }
     }
 
@@ -20,9 +22,22 @@ document.addEventListener('DOMContentLoaded', function() {
     input.addEventListener('input', () => {
         updateBody();
         updateStorage();
+        updateHeading();
     });
 
     function updateStorage() {
         localStorage.setItem('mode', JSON.stringify(input.checked)); // Store the checkbox input
     }
+
+    function updateHeading (){
+        if (input.checked) {
+            document.getElementById("heading").innerHTML = "Dark Mode";
+            
+        } else {
+            document.getElementById("heading").innerHTML = "Light Mode";
+        }
+    }
+
+
+
 });

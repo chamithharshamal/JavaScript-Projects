@@ -2,16 +2,18 @@ body{
     margin: 0;
     height: 100vh;
     box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .container{
     display: flex;
     flex-direction: row;
-    gap: 100px;
-    width: 300px;
-    height: 100px;
+    width: 255px;
+    height: 78px;
     position: absolute;
     right: 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .input{
@@ -44,6 +46,7 @@ body{
 .input:checked + .label{
     background-color: #ffffff;
 }
+
 .input:checked + .label .circle{
     background-color: #000;
     animation: open 0.4s linear forwards;
