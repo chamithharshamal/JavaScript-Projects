@@ -14,26 +14,21 @@ function addTask() {
             </div>
         `;
 
-    // Add event listener for deletion
-    var deleteButtons = document.getElementsByClassName("delete");
-    for (var i = 0; i < deleteButtons.length; i++) {
-      deleteButtons[i].onclick = function () {
-        this.parentNode.remove();
-      };
-    }
-
     // Add event listener for toggling
+    // this code is to toggle the checked class on the list items means when we click on the list item it will toggle the checked class
+    // toggle means if the class is present then it will remove the class and if the class is not present then it will add the class
     var taskItems = document.querySelector(".list");
     for (var i = 0; i < taskItems.length; i++) {
       taskItems[i].onclick = function () {
-        this.classList.toggle("checked");
+        this.classList.toggle("checked"); // Toggle checked class
       };
     }
-
+    // this code is to clear the input field after adding the task
     document.getElementById("newTask").value = "";
   }
 }
 
+// this function is to delete the task
 function deleteTask(element) {
-  element.parentNode.remove();
+  element.parentNode.remove(); // this will remove the parent node of the element which is clicked
 }
